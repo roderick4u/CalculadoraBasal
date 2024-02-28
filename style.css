@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 
 body{
+    background: #f6f5f7; 
     font-family: 'Montserrat', sans-serif;
-    background:white;
-    color:gray";
+    color: #3E363F;
 }
 #contenedor{
     width: 900px;
@@ -13,11 +13,7 @@ body{
     position: absolute;
     inset: 0;
     margin: auto;
-    border-radius: 10px;
-    overflow: hidden; 
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
-      0 10px 10px rgba(0,0,0,0.22);
-  }
+}
 #calculadora{
     background: white;
     /* Con estas 3 lineas vamos a hacer que los divs queden lado a lado */
@@ -25,9 +21,8 @@ body{
     height: 100%;
     float: left;
 }
-
 #detalle{
-    background: #FF416C;
+    background:  hsl(115, 79%, 16%);
     /* Con estas 3 lineas vamos a hacer que los divs queden lado a lado */
     width: 50%;
     height: 100%;
@@ -54,8 +49,8 @@ button {
 	font-weight: bold;
 	padding: 12px 45px;
 	border-radius: 30px;
-	background-color: #FF416C;
-	border: 1px solid #FF416C;
+	background-color: hsl(115, 79%, 16%);
+	border: 1px solid hsl(115, 79%, 16%);
 	color: #FFFFFF;
 	text-transform: uppercase;
 	letter-spacing: 1px;
@@ -65,4 +60,32 @@ button {
 button:active {
 	transform: scale(0.95);
 }
+#contenedor{
+    width: 900px;
+    height: 500px;
+    text-align: center;
+    /* Estas 3 lineas se encargan de centrar el div vertical y horizontalmente */
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden; 
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+      0 10px 10px rgba(0,0,0,0.22);
+  }
+  #error{
+    color: red;
+    font-weight: bold;
+    display: none;
+}
 
+.resultado{
+    color: #005323;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 5px;
+    display: none;
+}
+h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Agrega sombreado al texto */
+}
